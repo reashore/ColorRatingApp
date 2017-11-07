@@ -1,5 +1,5 @@
 
-const color = [
+const colorData = [
     {
         id: "ff27379b-5e79-4f92-9bc2-f20e872c6a88",
         title: "Ocean at Dusk",
