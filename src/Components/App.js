@@ -12,9 +12,10 @@ export default class App extends Component {
         this.state = {
             colors: []
         }
-        this.addColor = this.addColor.bind(this)
-        this.rateColor = this.rateColor.bind(this)
-        this.removeColor = this.removeColor.bind(this)
+
+        this.addColor = this.addColor.bind(this);        
+        this.rateColor = this.rateColor.bind(this);
+        this.removeColor = this.removeColor.bind(this);
     }
 
     addColor(title, color) {
@@ -51,16 +52,14 @@ export default class App extends Component {
     }
 
     render() {
-        const { addColor, rateColor, removeColor } = this
-        const { colors } = this.state
+        const { addColor, rateColor, removeColor } = this;
+        const { colors } = this.state;
+
         return (
             <div className="app">
                 <AddColorForm onNewColor={addColor} />
-                <ColorList colors={colors}
-                           onRate={rateColor}
-                           onRemove={removeColor} />
+                <ColorList colors={colors} onRate={rateColor} onRemove={removeColor} />
             </div>
         )
     }
-
 }

@@ -1,7 +1,6 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import {render} from 'react-dom';
 import App from './Components/App';
 import registerServiceWorker from './registerServiceWorker';
 
@@ -13,7 +12,9 @@ import registerServiceWorker from './registerServiceWorker';
 // optionalString: PropTypes.string,
 // optionalSymbol: PropTypes.symbol,
 
-let root = document.getElementById('root');
-ReactDOM.render(<App/>, root);
+//window.React = React;
+
+let reactContainer = document.getElementById('reactContainer');
+render(<App/>, reactContainer);
 
 registerServiceWorker();
