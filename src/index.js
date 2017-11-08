@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import StarRating from './Components/StarRating';
+import App from './Components/App';
 import registerServiceWorker from './registerServiceWorker';
 
 // optionalArray: PropTypes.array,
@@ -13,14 +13,7 @@ import registerServiceWorker from './registerServiceWorker';
 // optionalString: PropTypes.string,
 // optionalSymbol: PropTypes.symbol,
 
-
 let root = document.getElementById('root');
-ReactDOM.render(
-    <div>
-        <h1>Color Rating App</h1>
-        <StarRating />
-    </div>,
-    root
-);
+ReactDOM.render(<App/>, root);
 
 registerServiceWorker();

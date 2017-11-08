@@ -1,6 +1,7 @@
-import { Component } from 'react';
+
+import React from 'react';
 import PropTypes from 'prop-types';
-import '../../stylesheets/AddColorForm.scss';
+import '../Stylesheets/AddColorForm.scss';
 
 const AddColorForm = ({ onNewColor = f => f }) => {
     let _title;
@@ -16,9 +17,9 @@ const AddColorForm = ({ onNewColor = f => f }) => {
 
     return (
         <form className="add-color" onSubmit={submit}>
-            <input ref={input => _title = input} type="text" placeholder="color title..." required />
+            <input ref={input => _title = input} type="text" placeholder="color title" required />
             <input ref={input => _color = input} type="color" required />
-            <button>ADD</button>
+            <button>Add Color</button>
         </form>
     );
 }
